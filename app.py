@@ -5,12 +5,12 @@ import plotly.graph_objects as go
 st.title("发酵阶段雷达图")
 
 # 颜色和数据
-categories = ["Fruit Aroma", "Vinegar Note", "Acidity", "Carbonation", "Sweetness"]
+categories = ["Fruit Aroma", "VinegarNote", "Acidity", "Carbonation", "Sweetness"]
 data = {
-    "第一阶段 - 4天": [8, 3, 2, 4, 9],
-    "第一阶段 - 7天": [6, 4, 3, 5, 7],
-    "第二阶段 - 2天": [5, 6, 5, 3, 4],
-    "第二阶段 - 4天": [3, 8, 6, 2, 2],
+    "第一阶段 - 4天": [8, 3, 5, 4, 9],
+    "第一阶段 - 7天": [6, 4, 6, 5, 7],
+    "第二阶段 - 2天": [5, 6, 6, 3, 4],
+    "第二阶段 - 4天": [3, 8, 7, 2, 2],
 }
 colors = ["#FFA500", "#D2691E", "#DC143C", "#FF69B4"]
 
