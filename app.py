@@ -1,6 +1,16 @@
 import streamlit as st
 import plotly.graph_objects as go
 
+# 隐藏 Streamlit UI
+hide_streamlit_style = """
+    <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 # 标题
 st.title("发酵阶段雷达图")
 
@@ -13,7 +23,7 @@ categories = [
     "Sweetness (甜度)"
 ]
 
-# 更新数据
+# 数据
 data = {
     "第一阶段 - 4天": [8, 3, 5, 5, 9],
     "第一阶段 - 7天": [6, 4, 6, 6, 7],
